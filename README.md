@@ -21,5 +21,5 @@ This is an [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows y
 ## Written by
 
 Originally written by [Patrick Rainsberry](https://twitter.com/prrainsberry)
-Extended by yours truly
+Extended by yours truly.
 

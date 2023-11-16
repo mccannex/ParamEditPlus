@@ -1,6 +1,6 @@
 # ![](./resources/32x32.png) ParamEditPlus
 
-This is an [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows you to quickly manage  user parameters using only the keyboard.
+This [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows you to quickly manage user parameters using only the keyboard.
 
 ![Change Parameters](./resources/cover_image.png)
 

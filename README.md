@@ -10,13 +10,23 @@ This is an [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows y
 
 ## Usage
 
-* Once activated, open via the Solid > Modify > ParamEditPlus menu.
-* Use tab and shift+tab to navigate through parameters.
+* Once activated, open via the **Solid > Modify > ParamEditPlus** menu.
+* Just kidding, use a [keyboard shortcut](https://github.com/thomasa88/AnyShortcut). I like **Alt+Shift+P**.
+* Use **tab** and **shift+tab** to navigate through parameters.
 * Existing parameters will update in preview as you change them.
 * Pressing ESC will cancel whatever changes you've made.
-* The Paramater Command Input allows you to create, modify, and delete parameters using only the keyboard.
+* The **Paramater Command Input** allows you to create, modify, and delete parameters using only the keyboard.
 * I swear, it's like nobody who built the default Change Parameters dialog has ever used hotkeys before.
 * You can't delete parameters that are referenced by other parameters, but Fusion thinks you can. [It's a bug.](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-5f76a1ac-68fd-45da-bc7d-9bec963d775d)
+
+## FAQ
+
+* **Q:** Can I change parameter names with this? \
+  **A:** Probably not.
+* **Q:** Why did you make this? \
+  **A:** Reaching for the mouse is annoying.
+* **Q:** Any plans to add $feature_x? \
+  **A:** Maybe? We'll see. Work in progress.
 
 ## Written by
 

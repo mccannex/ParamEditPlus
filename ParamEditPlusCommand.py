@@ -116,22 +116,24 @@ class ParamEditPlusCommand(Fusion360CommandBase):
         if inputs.itemById('group_param_command') is None:
             inputs.addGroupCommandInput('group_param_command', 'Parameter Command Input')
             groupAddNew = inputs.itemById('group_param_command').children
-            groupAddNew.addStringValueInput('_param_command',
+            new_parameter = groupAddNew.addStringValueInput('_param_command',
                                         'Parameter Command',
                                         '')
-            groupAddNew.addBrowserCommandInput('html_command_help',
-                                            '',
-                                            './resources/html_command_help.html',
-                                            50,
-                                            50)
-        
+            new_parameter.tooltip = 'Allows for the creation of user parameters'
+            new_parameter.tooltipDescription = (
+                'Examples:\n'
+                'new_param = 10mm # set/update\n'
+                'del new_param # delete param'
+            )
+
         # Create a tab that lists all existing user parameters, sorted alphabetically
         if inputs.itemById('group_user_params') is None:
             inputs.addGroupCommandInput('group_user_params', 'User Parameters')
             groupUserParams = inputs.itemById('group_user_params').children
 
             for param in sorted_params:
-                groupUserParams.addStringValueInput(param.name,
+                edit_parameter = groupUserParams.addStringValueInput(param.name,
                                            param.name,
                                            param.expression)
+                edit_parameter.tooltip = param.comment
         

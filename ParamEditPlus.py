@@ -42,6 +42,14 @@ sheet_cmd['toolbar_panel_id'] = 'SheetMetalModifyPanel'
 pcb_cmd['toolbar_panel_id'] = 'PCBModifyPanel'
 sketch_cmd['toolbar_panel_id'] = 'SketchModifyPanel'
 
+solid_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Solid'
+surface_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Surface'
+mesh_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Mesh'
+form_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Form'
+sheet_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Sheet'
+pcb_cmd['cmd_id'] = 'cmdID_ParamEditPlus_PCB'
+sketch_cmd['cmd_id'] = 'cmdID_ParamEditPlus_Sketch'
+
 command_definitions.append(solid_cmd)
 command_definitions.append(surface_cmd)
 command_definitions.append(mesh_cmd)

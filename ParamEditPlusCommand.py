@@ -113,23 +113,25 @@ class ParamEditPlusCommand(Fusion360CommandBase):
         sorted_params = sorted(design.userParameters, key=lambda x: x.name, reverse=False) 
 
         # Create a tab for the parameters command input and an html file in ./resources that explains a bit
-        inputs.addGroupCommandInput('group_param_command', 'Parameter Command Input')
-        groupAddNew = inputs.itemById('group_param_command').children
-        groupAddNew.addStringValueInput('_param_command',
-                                    'Parameter Command',
-                                    '')
-        groupAddNew.addBrowserCommandInput('html_command_help', 
-                                        '',
-                                        './resources/html_command_help.html',
-                                        50,
-                                        50)
+        if inputs.itemById('group_param_command') is None:
+            inputs.addGroupCommandInput('group_param_command', 'Parameter Command Input')
+            groupAddNew = inputs.itemById('group_param_command').children
+            groupAddNew.addStringValueInput('_param_command',
+                                        'Parameter Command',
+                                        '')
+            groupAddNew.addBrowserCommandInput('html_command_help',
+                                            '',
+                                            './resources/html_command_help.html',
+                                            50,
+                                            50)
         
         # Create a tab that lists all existing user parameters, sorted alphabetically
-        inputs.addGroupCommandInput('group_user_params', 'User Parameters')
-        groupUserParams = inputs.itemById('group_user_params').children
+        if inputs.itemById('group_user_params') is None:
+            inputs.addGroupCommandInput('group_user_params', 'User Parameters')
+            groupUserParams = inputs.itemById('group_user_params').children
 
-        for param in sorted_params:
-            groupUserParams.addStringValueInput(param.name,
-                                       param.name,
-                                       param.expression)
+            for param in sorted_params:
+                groupUserParams.addStringValueInput(param.name,
+                                           param.name,
+                                           param.expression)
         

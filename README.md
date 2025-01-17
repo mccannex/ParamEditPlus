@@ -1,6 +1,6 @@
 # ![](./resources/32x32.png) ParamEditPlus
 
-This is an [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows you to quickly manage  user parameters using only the keyboard.
+This [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows you to quickly manage user parameters using only the keyboard.
 
 ![Change Parameters](./resources/cover_image.png)
 
@@ -16,8 +16,9 @@ This is an [Autodesk Fusion 360](http://fusion360.autodesk.com/) script allows y
 
 ## Usage
 
-* Once activated, use your mouse to open via the **Solid > Modify > ParamEditPlus** menu.
+* Once activated, use your mouse to open via the **Toolbar > Modify > ParamEditPlus** menu.
 * Just kidding, use a [keyboard shortcut](https://github.com/thomasa88/AnyShortcut), that's the whole point here. I like **Alt+Shift+P**.
+* Use **tab** after activating to focus the Command Input element - Fusion is very picky about this.
 * Use **tab** and **shift+tab** to navigate through parameters.
 * Existing parameters will update in preview as you change them.
 * Pressing ESC will cancel whatever changes you've made.
